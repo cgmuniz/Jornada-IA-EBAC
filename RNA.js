@@ -26,7 +26,7 @@ class Neuron {
         else return 0 // Desativado
     }
 
-    mutate(rate = 1) {
+    mutate(rate = 0.2) {
         this.weightList = this.weightList.map((w) => {
             return lerp(w, randomRange(-1, 1), rate)
         })
