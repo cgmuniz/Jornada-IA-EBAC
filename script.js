@@ -2,7 +2,7 @@ import utils from './utils.js'
 import RNA from './RNA.js'
 import controls from './controls.js'
 
-const SAMPLES = 20
+const SAMPLES = 10
 const game = Runner.instance_
 
 let dinoList = []
@@ -27,7 +27,7 @@ setTimeout(() => {
 }, 1_000)
 
 setInterval(() => {
-    if (!game.activate) return
+    if (!game.activated) return
 
     const dino = dinoList[dinoIndex]
 
